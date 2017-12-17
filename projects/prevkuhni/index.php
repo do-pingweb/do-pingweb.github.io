@@ -33,8 +33,86 @@
     </style>
   </head>
   <body>
-    <?php require_once 'top.php';?>
-	<?php require_once 'header.php';?>
+    <div class="top">
+      <div class="container">
+        <div class="top__list">
+	      <div class="top__item  top__item--logo" onclick="location.href='/'"></div>
+	      <div class="top__item  top__item--nav">
+	        <ul class="main-menu">
+		    <li><a href="/">Главная</a></li>
+		    <li><a href="catalog.php">Каталог кухонь</a></li>
+		    <li><a href="blog.php">База знаний</a></li>
+		    <li><a href="our-works.php">Наши работы</a></li>
+		    <li><a href="contacts.php">Контакты</a></li>
+		    </ul>
+	      </div>
+	      <div class="top__item  top__item--phone">
+	        <a href="tel:+74812566590">8(4812)566-590</a>
+	      </div>
+	    </div>
+      </div>
+    </div> 
+	<div class="header">
+	  <div class="container">
+		<div class="tagline">
+		  <div class="tagline__subheader">
+			Изготовление дизайнерских кухонь под заказ в Смоленске
+		  </div>
+		  <div class="tagline__cheaper">
+			на 10-30% дешевле, чем в магазинах
+		  </div>
+		  <div class="tagline__why-cheaper">
+			потому что у нас нет дорогой аренды и рекламы, лишних продавцов
+		  </div>
+		  <div class="tagline__list">
+			<div class="tagline__item">
+			  <div class="pluses">
+				<div class="pluses__item  pluses__item--guarantee">
+				  Гарантия 2 года
+				</div>
+				<div class="pluses__item  pluses__item--complect">                
+				  Полная комплектация кухонной техникой
+				</div>
+				<div class="pluses__item  pluses__item--project">                
+				  Выезд дизайнера и разработка проекта бесплатно
+				</div>
+				<div class="pluses__item  pluses__item--payment">                
+				  Рассрочка до 6 месяцев
+				</div>				
+			  </div>
+			</div>
+			<div class="tagline__item">
+			  <div class="tagline__order">
+				<div class="tagline__subtitle">
+				  Оставьте заявку на консультацию нашего дизайнера
+				</div>
+				<form method="POST">
+				  <input hidden value="Заявка на консультацию дизайнера" name="Тема">
+				  <input type="text" required class="bordered-white" name="Телефон" value="" placeholder="Введите номер">
+				  <label class="tagline__wrapper">
+					<input id="now" name="Перезвонить" type="radio" value="сейчас" class="radio" checked>
+					<span class="radio-custom"></span>
+					<label for="now" class="tagline__signature">Позвоните прямо сейчас</label>
+				  </label>
+				  <label class="tagline__wrapper">
+					<!--<div class="when-call">-->
+					<input id="time" name="Перезвонить" type="radio" value="в указанное время" class="radio radio-time">
+					<span class="radio-custom"></span>
+					<label for="time" class="tagline__signature">Позвоните в</label> 
+					<input name="Время" class="hours" value="" type="text">
+					<!--</div>-->
+				  </label>
+				  <div class="form-success">Ваше сообщение успешно отправлено!</div>			  
+				  <input type="submit" value="Перезвонить" class="callback  pulse-white">
+				</form>
+				<div class="tagline__copyright">Нажимая на кнопку &laquo;ПЕРЕЗВОНИТЬ&raquo;, Вы даете согласие на обработку Ваших персональных данных</div>
+				
+			  </div>                
+			</div>
+		  </div>
+		</div>        
+	  </div>
+	</div>
 	<div class="advantages">
       <div class="container">
 		<div class="advantages__subheader">Лайк мебель Смоленск</div>
@@ -403,8 +481,42 @@
         	  
       </div>
     </div> 
-	<?php require_once 'gifts.php';?>
-	<?php require_once 'video-review.php';?>
+	<div class="gifts">
+	  <div class="container">
+		<div class="gifts__subheader">Настоящие подарки</div>
+		<div class="gifts__list">
+		  <div class="gifts__item">
+			<div class="gifts__subtitle">Сертификат 20% на жалюзи и рулонные шторы</div>
+			<div class="gifts__descr">При заказе любой кухни мы дарим сертификат на честную скидку в 20% от нашей компании <a href="http://превосходные-жалюзи.рф" target="_blank" rel="nofollow">превосходные-жалюзи.рф</a>.</div>
+		  </div>
+		  <div class="gifts__item  gifts__item--timer">
+			<div class="gifts__end">
+			  Скидки действуют до конца декабря 2017 года.<br>
+			  До конца акции осталось
+			</div>
+			<div class="gifts__timer">
+			  <script src="http://megatimer.ru/s/b36628724806e4f0330b55990ce9476e.js"></script>
+			</div>
+		  </div>
+		  <div class="gifts__item">
+			<div class="gifts__subtitle">Сертификат 50% на натяжной потолок</div>
+			<div class="gifts__descr">При заказе любой кухни мы дарим сертификат на честную скидку в 50% от компании <a href="http://потолок67.рф/" target="_blank" rel="nofollow">Потолок 67</a>.</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="video-review">
+	  <div class="container">
+		<div class="video-review__subheader">Отзывы наших клиентов</div>
+		<div class="content__video  content__video--main">
+		  <iframe src="https://player.vimeo.com/video/245915176" width="524" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		  <iframe src="https://player.vimeo.com/video/245930155" width="524" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/228543548" width="524" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/228543689" width="524" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<a href="our-works.php" class="our-works__all  pulse-button">Посмотреть все наши работы</a>  
+	  </div>
+	</div>
     <div class="equipment">
       <div class="container">
         <div class="equipment__list">
@@ -463,7 +575,31 @@
 		</div>
       </div>
     </div>	
-    <?php require_once 'own-manufacture.php';?>
+    <div class="own-manufacture">
+	  <div class="container">
+		<div class="own-manufacture__subheader">Собственное производство</div>
+		<div class="own-manufacture__comment">
+		  Основное направление нашей деятельности — производство оригинальной мебели по индивидуальным проектам. Продукция изготавливается в Смоленске на собственном производстве, оснащенном высокотехнологичным оборудованием FELDER, WEILI, SCM. В своей деятельности мы используем качественные, экологически чистые современные материалы (дерево, МДФ, ЛДСП, ДВП). Из многообразия материалов отделки вы сможете выбрать наиболее подходящий для вас.
+		</div>
+		<div class="gallery">
+		  <div class="gallery__item">
+			<a data-fancybox="gallery" href="images/own-1.jpg">
+			  <img alt="Наше производство" src="images/own-small1.jpg">
+			</a>
+		  </div>
+		  <div class="gallery__item">
+			<a data-fancybox="gallery" href="images/own-2.jpg">
+			  <img alt="Наше производство" src="images/own-small2.jpg">
+			</a>
+		  </div>
+		  <div class="gallery__item">
+			<a data-fancybox="gallery" href="images/own-3.jpg">
+			  <img alt="Наше производство" src="images/own-small3.jpg">
+			</a>
+		  </div>
+		</div>		  
+		</div>
+	</div>
 	<div class="useful-book">
       <div class="container">
         <div class="useful-book__subheader">
@@ -488,7 +624,119 @@
 		</div>
       </div>
     </div>  
-	<?php require_once 'our-designer.php';?>
+	<div class="our-designer">
+	  <div class="container">
+		<div class="our-designer__subheader">Почему наш дизайнер лучше обычного замерщика</div>
+		<div class="our-designer__adv-list">
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Правильно снимет размеры" src="images/ico-correct-size.svg">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  &laquo;правильно&raquo; снимет размеры
+			</div>  
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Порекомендует дизайн" src="images/ico-advice-design.svg">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  порекомендует дизайн со вкусом под стиль всей квартиры
+			</div>  
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Бесплатный выезд" src="images/ico-free-project.svg">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  приедет и создаст дизайн-проект бесплатно, и это не обязывает Вас делать заказ
+			</div>  
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Составит дизайн-проект" src="images/ico-design-project.svg">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  составит дизайн-проект кухни
+			</div>  
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Поможет организовать пространство" src="images/ico-use-space.png">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  расскажет, как выгодно использовать пространство
+			</div>   
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Поможет подобрать материал" src="images/ico-advice-material.svg">
+			</div>
+			<div class="our-designer__adv-descr">
+			  подскажет, какой материал подойдет под Ваши нужды
+			</div>  
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Привезет образцы фасадов" src="images/ico-examples.svg">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  привезет образцы фасадов, чтобы Вы их пощупали и увидели вживую
+			</div>  
+		  </div>
+		  <div class="our-designer__adv-item">
+			<div class="our-designer__adv-photo">
+			  <img alt="Оформит договор" src="images/ico-prepare-document.svg">
+			</div>
+			<div class="our-designer__adv-descr">			
+			  оформит договор в случае заказа
+			</div>  
+		  </div>
+		</div>
+		<div class="our-designer__person">
+		  <div class="our-designer__person-photo"></div>
+		  <div class="our-designer__person-callback">
+			<div class="our-designer__person-about">
+			  <p>Марина, один из лучших наших сотрудников.</p>
+			  <p>Имеет чувство прекрасного и хорошо подбирает стиль.</p>
+			  <p>Обычно клиенты в восторге. :-)</p>
+			</div>
+			<div class="our-designer__person-call">
+			  <p>Оставьте заявку в форме ниже, и Марина Вам перезвонит в ближайшее время.</p>
+			  <p class="our-designer__person-attention">Позвоните по номеру <a href="tel:+74812566590">8(4812) 566-590</a> или оставьте свой номер, и мы перезвоним.</p>
+			  <form method="POST">
+				<input name="Тема" value="Просьба перезвонить" hidden>
+				<input type="text" class="bordered-bottom" name="phone" value="" placeholder="Введите номер">
+				<div class="our-designer__form-wrapper">
+				  <div class="our-designer__form-item">
+					<label class="our-designer__wrapper">
+					  <input id="now1" name="Перезвонить" type="radio" value="сейчас" class="radio" checked>
+					  <span class="radio-custom"></span>
+					  <label for="now1" class="tagline__signature">Позвоните прямо сейчас</label>
+					</label>
+				  </div>
+				  <div class="our-designer__form-item">
+					<label class="our-designer__wrapper">
+					  <!--<div class="when-call">-->
+					  <input id="time1" name="Перезвонить" type="radio" value="в указанное время" class="radio  radio-time">
+					  <span class="radio-custom"></span>
+					  <label for="time1" class="tagline__signature">Позвоните в</label> 
+					  <input name="Время" class="hours" value="" type="text" placeholder="время">
+					 <!-- </div>-->
+					</label>
+				  </div>
+				</div>
+				<div class="form-success">Ваше сообщение успешно отправлено!</div>
+				<input type="submit" value="Перезвонить" class="our-designer__callback  pulse-button">
+			  </form>
+			  
+			  
+			</div>
+		  </div>
+		  <div class="our-designer__copyright">Нажимая на кнопку &laquo;ПЕРЕЗВОНИТЬ&raquo;, Вы даете согласие на обработку Ваших персональных данных</div>
+		</div>
+	  </div>
+	</div> 
     <div class="production">
       <div class="container">
 	    <div class="production__subheader">Желаете приехать к нам на производство?</div>
@@ -516,7 +764,39 @@
 	  </div>
 	  
     </div>
-    <?php require_once 'footer.php';?>
+    <div class="footer">
+	  <div class="footer__item  footer__item--contacts">
+		<div class="container-half  container-half--fcontacts">
+		  <div class="footer__subheader">Like Mebel</div>
+		  <div class="footer__address">
+			г. Смоленск, пос. Тихвинка, д.69, к.3.
+		  </div>
+		  <div class="footer__where-find">
+			Рославльское шоссе, поворот на "Город мастеров", через ~300 метров первый перекресток, поворачиваете направо, слева будет наше производство.
+		  </div>
+		  <div class=" footer__taxi">
+			<div class=" footer__taxi-header">
+			  Такси до производства и обратно за наш счет!
+		  </div>
+		  <div class=" footer__taxi-descr">
+			Просто позвоните и скажите: <br>"Хочу к вам на такси".<br>
+			Это не обязывает вас делать заказ.
+		  </div>
+		  </div>
+		  <div class=" footer__telephone">
+			<a href="tel:+74812566590">8(4812)566-590</a>
+		  </div>
+		  <div class=" footer__mail">
+			<a href="mailto:566-590@mail.ru">566-590@mail.ru</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer__item  footer__item--map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d55e9b4207eddcf57186c9c4eaf8e7beda8827ee29648c334c8d01f3a2879cd&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+	  </div>      
+	</div>
+
+
       
     <div class="remodal" data-remodal-id="modal">
       <button data-remodal-action="close" class="remodal-close"></button>
