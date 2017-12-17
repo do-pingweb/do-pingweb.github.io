@@ -1,0 +1,458 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+input, textarea, select, button{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+h2{
+  font-size: 37px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3f3f3f;
+  text-align: center;
+}
+h4 {
+  font-size: 24px;
+  line-height: 26px;
+  color: #3f3f3f;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+.yellow_text {
+  color: #fdc502;
+}
+.blue_text{
+  color: #00bcba;
+}
+section h2 {
+  margin-bottom: 50px;
+}
+section {
+  position: relative;
+  margin-top: 105px;
+  margin-bottom: 120px;
+}
+button {
+  height: 68px;
+  border: 2px solid #fdb302;
+  width: 232px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fdb302;
+}
+
+button:hover,
+button:active,
+button:focus{
+  background-color: transparent;
+  cursor: pointer;
+}
+.select1_container {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.select1_box {
+  height: 129px;
+  width: 129px;
+  margin: 10px;
+  background-color: #bfbfbf;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.select1_box_hover {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #3f3f3f;
+  z-index: 12;
+}
+.select1_box span {
+  background-color: #e5e5e5;
+  display: block;
+  width: 100%;
+  color: #3f3f3f;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 5px;
+  z-index: 10;
+}
+.select1_box_hover:hover, .select1_box_hover.selected {
+  background: rgba(255, 37, 88, 0.5);
+}
+.calculator_bar {
+  height: 91px;
+  border: 2px solid #3f3f3f;
+  border-radius: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.calculator_bar_item {
+  width: calc(100%/6 + 2px);
+  border-right: 2px solid #3f3f3f;
+  background-color: #e5e5e5;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+.calculator_bar_item:last-child {
+  border-right: 0;
+  border-radius: 0 45px 45px 0;
+}
+.calculator_bar_item:first-child {
+  border-radius: 45px 0 0 45px;
+}
+.calculator_bar_item .number{
+  font-weight: 700;
+  font-size: 48px;
+  color: #828282;
+  text-transform: none;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.calculator_bar_item span{
+  font-size: 16px;
+  color: #3f3f3f;
+  text-transform: uppercase;
+}
+.calculator_bar_item.active_stage, .calculator_bar_item.done{
+  background-color: #ff2558;
+}
+.calculator_bar_item.active_stage .number, .calculator_bar_item.done .number{
+  color: #fff;
+}
+.calculator_bar_item.active_stage span, .calculator_bar_item.done span{
+  color: #fff;
+}
+.calc_form_stage {
+  display: none;
+  margin-top: 70px;
+}
+div#stage1 {
+  margin-left: 120px;
+}
+.calc_form_stage.active_stage{
+  display: block;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stage1_plan_item{
+  display: none;
+}
+.stage1_plan_item.selected{
+  display: block;
+}
+#select_stage1{
+  display: none;
+}
+.stage1_plan input.disible_input{
+  display: none;
+}
+.stage1_plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 170px;
+  padding-left: 40px;
+}
+.stage1_plan input {
+  border-radius: 20px;
+  border: 2px solid #3f3f3f;
+  height: 28px;
+  padding: 2px 10px;
+  width: 80px;
+  position: absolute;
+  font-size: 16px;
+}
+input#size1 {
+  top: 155px;
+  left: 0px;
+}
+input#size2 {
+  top: 83px;
+  left: 200px;
+}
+hr.stage {
+  width: 100%;
+  border-bottom: 2px dotted #000;
+  border-top: 0;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+.stage_desc p {
+  color: #000;
+  text-align: left;
+}
+.red_desc{
+  color: #ff0000;
+  font-style: italic;
+  font-size: 14px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+#size1 + label {
+  position: absolute;
+  top: 159px;
+  left: 52px;
+  font-size: 16px;
+}
+#size2 + label {
+  position: absolute;
+  top: 87px;
+  left: 250px;
+  font-size: 16px;
+}
+#size3 + label {
+  position: absolute;
+  top: 156px;
+  left: 308px;
+  font-size: 16px;
+}
+#size3.disible_input + label{
+  display: none;
+}
+/*stage2*/
+div#stage2 {
+  margin-left: 70px;
+}
+div#stage2 .select1_box img {
+  position: absolute;
+}
+.select2_container {
+  display: flex;
+}
+#select_stage2{
+  display: none;
+}
+/* stage3 */
+.select3_container {
+  display: flex;
+  justify-content: center;
+}
+#select_stage3{
+  display: none;
+}
+div#stage3 .select1_box img {
+  position: absolute;
+}
+/* stage4 */
+.select4_container {
+  display: flex;
+  justify-content: center;
+}
+#select_stage4{
+  display: none;
+}
+div#stage4 .select1_box img {
+  position: absolute;
+}
+/* stage5 */
+.select5_container {
+  display: flex;
+  justify-content: center;
+}
+#select_stage5{
+  display: none;
+}
+div#stage5 .select1_box img {
+  position: absolute;
+}
+/* stage6 */
+.select6_container {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  margin: 0 auto;
+}
+section.ms_4 {
+  background-color: #00bcba;
+}
+.select6_container input, .select6_container textarea {
+  font-size: 18px;
+  color: #000;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 28px;
+  padding: 5px;
+}
+
+.select6_container input::-webkit-input-placeholder,
+.select6_container textarea::-webkit-input-placeholder { 
+  color: #000;
+}
+.select6_container input::-moz-placeholder,
+.select6_container textarea::-moz-placeholder {
+  color: #000;
+}
+.select6_container input:-ms-input-placeholder,
+.select6_container textarea:-ms-input-placeholder {
+  color: #000;
+}
+.select6_container input:-moz-placeholder,
+.select6_container textarea:-moz-placeholder {
+  color: #000;
+}
+.input_row {
+  display: flex;
+  justify-content: space-between;
+}
+.input_row label{
+  color: #000;
+  font-size: 18px;
+}
+.select6_container .input_row input[type="file"]{
+  border: 0;
+}
+.attantion {
+  background: url(../images/info.png) 10px center no-repeat;
+  background-color: #b1b1b1;
+  background-size: 4%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.attantion span {
+  padding-left: 45px;
+  font-size: 14px;
+  color: #fff;
+}
+.attantion span a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+}
+span.requared {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 35px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*************/
+.calculator_footer {
+  display: flex;
+}
+.calculator_footer button,
+.form-group button,
+.form-group input[type="submit"] {
+  background-color: #ff2558;
+  border: 1px solid #ff2558;
+  margin-left: auto;
+  height: 46px;
+  width: 167px;
+  border-radius: 3px;
+}
+.calculator_footer button.next_stage {
+  margin-left: 15px;
+}
+.calculator_footer button:hover{
+  background-color: #c31e47;
+}
+div#stage6>p {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+.form-group button.back_stage:hover{
+  background-color: #b8b8b8;
+}
+.form-group button {
+  margin: auto;
+  background-color: #b1b1b1;
+  border: 1px solid #b1b1b1;
+}
+.form-group input[type="submit"] {
+  margin: auto;
+  color: #fff;
+}
+.form-group input[type="submit"]:hover,
+.form-group button:hover{
+  background-color: #c31e47;
+  cursor: pointer;
+}
+span.invalid-desc1::before,
+span.invalid-desc2::before,
+span.invalid-desc3::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  display: block;
+  background-color: #ff2558;
+  transform: translate(17px, -6px) rotate(45deg);
+  z-index: 1;
+}
+span.invalid-desc1,
+span.invalid-desc2,
+span.invalid-desc3 {
+  display: none;
+  background-color: #ff2558;
+  z-index: 100;
+  width: 175px;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0 0 15px;
+  position: absolute;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.65);
+}
+.form-success {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 22px;
+    border: 2px solid #000;
+    width: 30%;
+    margin: auto;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    z-index: 999;
+    left: 34%;
+}
+@media (max-width: 1200px) and (min-width: 415px){
+  body {
+    width: 1200px;
+  }
+}
+

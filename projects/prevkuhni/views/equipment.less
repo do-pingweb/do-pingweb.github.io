@@ -1,0 +1,111 @@
+.equipment {
+  /*display: flex;
+  align-items: center;
+  height: 780px;*/
+  padding: 80px 0;
+  background: url(../images/equipment-bg.jpg) center top no-repeat;
+  background-size: cover;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    width: calc(~"100%/12*6");
+	position: relative;
+  }
+  &__item:first-child:after {
+    content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	height: 100%;
+	width: 1px;
+	background-color: #ff2558;
+  }
+  &__item:last-child {
+    padding-left: 30px;
+  }
+  &__item ul {
+    margin-left: 45px;
+  }
+  &__item ol {
+    margin-left: 45px;
+	list-style-type: none;
+	counter-reset: num;
+  }
+  &__item ul li {
+    position: relative;
+	list-style-type: none;
+	padding-left: 15px;
+  }
+  &__item  ul li:before {
+    content: "\25cf";
+	color: #ff2558;
+	position: absolute;
+	left: 0;
+	top: 0;
+  }
+  &__item ol li:before {
+    content: counter(num) '. ';
+    counter-increment: num;
+	color: #ff2558;
+	margin-right: 5px;
+  }
+  &__subtitle {
+    font-size: 30px;
+	font-weight: bold;
+	color: #101010;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+  }
+  &__subtitle-lower {
+    margin: 40px 0;
+    font-size: 24px;
+	font-weight: 400;
+	color: #101010;
+	text-transform: uppercase;
+  }
+  &__attention {
+    color: #ff2558;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 65px;
+  }
+}
+
+@media (max-width: 414px) {
+  .equipment {
+    padding: 0;
+	&__list {
+	  flex-direction: column;
+	}
+	&__item {
+	  width: 100%;
+	}
+	&__item ul {
+	  margin: 0 60px;
+	}
+	&__item:first-child {
+	  margin-bottom: 20px;
+	}
+	&__item:first-child:after {
+	  display: none;
+	}
+	&__item:last-child {
+	  padding-left: 0;
+	}
+	&__subtitle {
+	  margin-bottom: 20px;
+	  text-align: center;
+	  font-size: 28px;
+	}
+	&__subtitle-lower {
+	  margin: 20px 0;
+	  text-align: center;
+	}
+	&__attention {
+	  margin-top: 20px;
+	  text-align: center;
+	}
+  }
+}

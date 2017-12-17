@@ -1,0 +1,77 @@
+.production {
+  text-align: center;
+  /*height: 850px;
+  display: flex;
+  align-items: center;*/
+  padding: 80px 0;
+  background: url(../images/production.jpg) center top no-repeat;
+  background-size: cover;
+  &__subheader {
+    font-size: 50px;
+	color: #101010;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 500;
+  }
+  &__comment {
+    font-size: 24px;
+	color: #101010;
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 30px;
+  }
+  &__coupon {
+    display: inline-block;
+    margin-bottom: 30px;
+	text-align: center;
+	-webkit-box-shadow: 1px 1px 13px 0px rgba(16, 8, 5, 0.5);
+    -moz-box-shadow:    1px 1px 13px 0px rgba(16, 8, 5, 0.5);
+    box-shadow:         1px 1px 13px 0px rgba(16, 8, 5, 0.5);
+  }
+  &__print-coupon {
+    padding: 20px 55px 20px 100px;
+  }
+  &__form {
+    margin: 40px auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+	flex-wrap: wrap;
+    width: 60%;  
+  }
+  &__get-button {
+    margin-left: 50px;
+    padding: 20px 40px 20px 70px;
+    background: url(http://xn----ctbgcctnvdeainr0bzah7h.xn--p1ai/images/ico-get-book.png) left 30px center no-repeat;
+  }
+}
+
+
+
+
+
+@media (max-width: 414px) {
+  .production {
+    padding: 0;
+	&__subheader {
+      font-size: 30px;
+	  margin-bottom: 20px;
+    }
+    &__comment {
+      margin-bottom: 20px;
+    }
+    &__coupon img {
+      max-width: 100%;
+    }
+	&__form {
+	  width: 100%;
+	}
+	.bordered-bottom {
+	  margin-bottom: 20px;
+	}
+  }
+  .print {
+    background-position: left 25px center !important;
+  }
+}

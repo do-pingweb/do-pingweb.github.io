@@ -1,0 +1,87 @@
+.coupon {
+  margin-top: 60px;
+  text-align: center;
+  padding: 70px 0;
+  &__example {
+    display: inline-block;
+    -webkit-box-shadow: 1px 1px 13px 0px rgba(16, 8, 5, 0.5);
+    -moz-box-shadow: 1px 1px 13px 0px rgba(16, 8, 5, 0.5);
+    box-shadow: 1px 1px 13px 0px rgba(16, 8, 5, 0.5);
+	margin-bottom: 70px;
+  }
+  &__example img {
+    width: 100%;  
+  }
+  &__doing {
+    width: calc(~"100%/12*10");
+	background-color: #ff2558;
+	padding: 20px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff;
+	margin: 0 auto 60px auto;
+  }
+  &__notice {
+    font-size: 24px;
+	font-weight: 300;
+	color: #1f1f1f;
+	margin-bottom: 55px;
+  }
+   &__notice a {
+     text-decoration: none;
+	 font-weight: bold;
+	 color: #1f1f1f;
+   }
+   &__map {
+     width: calc(~"100%/12*10");
+	 margin: 0 auto 60px auto;
+   }
+   &__buttons {
+     display: flex;
+	 flex-direction: column;
+	 align-items: center;
+   }
+   &__print {
+     margin-bottom: 70px;
+	 padding: 20px 55px 20px 100px;
+   }
+   &__print:hover {
+     cursor: pointer;
+   } 
+}
+.home-button {
+  border: 2px solid #ff2558;
+  padding: 30px 55px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ff2558;
+  text-decoration: none;
+  display: inline-block;
+  background: url(../images/ico-home.png) left 15px center no-repeat;
+}
+
+@media (max-width: 414px) {
+  .coupon {
+    &__example {
+	  margin-bottom: 30px;
+	}
+	&__doing {
+	  width: 100%;
+	  margin: 0 auto 30px auto;
+	  font-size: 20px;
+	}
+	&__notice {
+	  margin-bottom: 30px;
+	}
+	&__map {
+	  width: 100%;
+	  margin: 0 0 30px 0;
+	}
+	&__print {
+	  margin-bottom: 30px;
+	  padding: 20px 20px 20px 50px !important;
+	  background-position: left 20px center !important;
+	}
+  }
+}

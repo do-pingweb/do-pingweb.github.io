@@ -1,0 +1,116 @@
+.top {
+  display: flex;
+  align-items: center;
+  background-color: #434344;
+  opacity: .9;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  &__list {
+    display: flex;
+	align-items: center;
+  }
+  &__item--logo {
+    width: calc(~"100%/12*4");
+	background: url(../images/logo.svg) left 25px center no-repeat;
+	height: 47px;
+  }
+  &__item--logo:hover {
+    cursor: pointer;
+  }
+  &__item--nav {
+    width: calc(~"100%/12*6");
+  }
+  &__item--nav li {
+    list-style-type: none;
+	display: inline-block;
+  }
+  &__item--phone {
+    width: calc(~"100%/12*2");
+	padding-left: 15px;
+	a {
+	  color: #fff;
+	  font-weight: bold;
+	  font-size: 16px;
+	  text-decoration: none;
+	}  
+  }
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  /*margin: 0 15px;*/
+  margin: 0 40px;
+  li {
+    position: relative;
+  }
+  li:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: -5px;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+  }
+  li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }	
+  a {
+    color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	text-decoration: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .top {
+    min-height: 120px;
+	&__list {
+	  flex-wrap: wrap;
+	}
+	&__item--logo {
+	  width: 50%;
+	  background-position: left center;
+	  background-size: contain;
+	}
+	&__item--nav {
+	  width: 100%;
+	  order: 3;
+	  margin-top: 10px;
+	  li {
+	    display: flex;
+		text-align: center;
+		align-items: center;
+	  }
+	  li > a {
+	    font-size: 13px;
+	  }
+	}
+	&__item--phone {
+	  width: 50%;
+	  order: 2;
+	  height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+	}
+	&__item--phone a {
+	  font-size: 18px;
+	}
+  }
+  .main-menu {
+     margin: 0;
+  }
+}

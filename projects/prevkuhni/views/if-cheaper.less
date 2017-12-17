@@ -1,0 +1,126 @@
+.if-cheaper {
+  padding: 80px 0;
+  background: url(../images/if-cheaper-bg.jpg) center top no-repeat;
+  background-size: cover;
+  .container {
+    padding: 0 10%;
+	text-align: center;
+  }
+  &__subheader {
+    font-size: 50px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #101010;
+	line-height: .7em;
+  }
+  &__subheader-smaller {
+    font-size: 24px;
+  }
+  p {
+    font-size: 24px;
+	font-weight: 300;
+	text-align: left;
+  }
+  form {
+    margin-top: 30px;
+	position: relative;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+  }
+  &__nobg {
+    padding: 10px 0;
+	background: none;
+	min-width: 525px;
+	/*min-width: 525px !important;*/
+  }
+  input:first-of-type {
+    width: 100%;
+	margin-bottom: 35px;
+  }
+
+  &__send {
+    display: block;
+	background: url(../images/ico-calc.png) left 40px center no-repeat transparent!important;
+    padding: 20px 50px 20px 80px;
+	border-radius: 0;
+	border: 2px solid #ff2558 !important;
+	margin: 85px auto 50px auto;
+	color: #ff2558 !important;
+  }
+  #file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  #file + label {
+    padding: 15px 15px 15px 45px;
+    color: #fff;
+    background: url(../images/ico-document.png) left 15px center no-repeat #ff2558;
+    display: inline-block;
+    cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 75px;
+  }
+  &__copyright {
+    display: inline-block;
+	margin: 0 auto;
+	color: #ff2558;
+	font-size: 11px;
+	padding-left: 25px;
+	background: url(../images/ico-cheaper-copy.png) left center no-repeat;
+	background-size: contain;
+  }
+  .form-success {
+    margin: 85px auto 50px auto;
+  }
+  .bordered-bottom--narrow {
+    width: 65%;
+	margin-top: 40px;
+  }
+}
+
+@media (max-width: 414px) {
+  .if-cheaper {
+    padding: 0;
+	.container {
+	  padding: 30px 15px;
+	}
+	&__subheader {
+	  font-size: 30px;
+	  margin-bottom: 20px;
+	  line-height: 1.2em;
+	}
+	&__subheader-smaller {
+	  font-size: 20px;
+	}
+	.bordered-bottom:last-of-type {
+      width: 100%;
+    }
+	&__send {
+	  margin: 20px auto;
+	  padding: 20px 65px !important;
+	  background-position: left 30px center !important;
+	}
+	&__nobg {
+	  width: 100%;
+	}
+	&__nobg:first-child {
+	  margin-bottom: 10px;
+	}
+	form {
+	  text-align: center;
+	}
+	#file + label {
+	  position: relative;
+	  top: 0;
+	  margin: 20px auto 0 auto;
+	}
+  }
+}

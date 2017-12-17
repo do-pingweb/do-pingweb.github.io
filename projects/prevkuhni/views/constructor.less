@@ -1,0 +1,70 @@
+.constructor {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: center;
+  height: 400px;*/
+  padding: 80px 0;
+  /*background: url(../images/constructor-bg.jpg) center top no-repeat;*/
+  background-size: cover;
+  &__subheader {
+    width: 100%;
+    font-size: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item--descr {
+    width: calc(~"100%/12*7");
+	padding-left: 70px;
+	font-weight: 400;
+	color: #fff;
+	font-size: 23px;
+	text-transform: uppercase;
+  }
+  &__item--transition {
+    width: calc(~"100%/12*5");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+}
+.open-constructor {
+  display: inline-block;
+  background: url(../images/ico-open-constructor.png) left 35px center no-repeat;
+  padding: 20px 40px 20px 80px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 414px) {
+  .constructor {
+    display: none;
+    padding: 0;
+	&__subheader {
+	  font-size: 30px;
+	  margin-bottom: 20px;
+	}
+	&__list {
+	  flex-direction: column;
+	}
+	&__item--descr {
+	  width: 100%;
+	  padding-left: 0;
+	  text-align: center;
+	  margin-bottom: 20px;
+	  font-size: 20px;
+	}
+	&__item--transition {
+	  width: 100%;
+	}
+  }
+}

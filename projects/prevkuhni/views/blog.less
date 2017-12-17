@@ -1,0 +1,121 @@
+.blog {
+  padding: 80px 0;
+  &__subheader {
+    font-weight: 500;
+	font-size: 50px;
+	color: #101010;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+  }
+  &__dopheader {
+    font-size: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    width: calc(~"100%/12*6");
+	padding: 0 20px;
+  }
+  &__item a {
+    font-size: 22px;
+	font-weight: 300;
+	color: #101010;
+	text-decoration: none;
+	line-height: 1.1em;
+  }
+  &__item a:hover {
+    text-decoration: underline;
+  }
+  &__article {
+    /*padding-left: 30px;*/
+	margin-bottom: 30px;
+	display: flex;
+	height: 50px;
+  }
+  &__article:last-child {
+    margin-bottom: 0;
+  }
+  &__article a {
+    display: flex;
+    align-items: center;
+  }
+  &__article--sockets {
+    background: url(../images/ico-sockets.svg) left center no-repeat;
+  }
+  &__article--compare {
+    background: url(../images/ico-compare.svg) left center no-repeat;
+  }
+  &__article--face {
+    background: url(../images/ico-face.svg) left center no-repeat;
+  }
+  &__article--tabletop {
+    background: url(../images/ico-tabletop.svg) left center no-repeat;
+  }
+  &__article--design {
+    background: url(../images/ico-design.svg) left center no-repeat;
+  }
+  &__article--blum {
+    background: url(../images/ico-blum.svg) left center no-repeat;
+  }
+  &__article--question {
+    background: url(../images/ico-question.svg) left center no-repeat;
+  }
+}
+
+.article__icon {
+  flex-shrink: 0;
+  width: 43px;
+  height: auto;
+  margin-right: 15px;
+}
+.article__icon--sockets {
+  background: url(../images/ico-sockets.svg) center center no-repeat;
+}
+.article__icon--compare {
+  background: url(../images/ico-compare.svg) center center no-repeat;
+}
+.article__icon--face {
+  background: url(../images/ico-face.svg) center center no-repeat;
+}
+.article__icon--tabletop {
+  background: url(../images/ico-tabletop.svg) center center no-repeat;
+}
+.article__icon--blum {
+  background: url(../images/ico-blum.png) center center no-repeat;
+}
+.article__icon--design {
+  background: url(../images/ico-design.svg) center center no-repeat;
+}
+.article__icon--question {
+  background: url(../images/ico-question.svg) center center no-repeat;
+}
+
+@media (max-width: 414px) {
+  .blog {
+    padding: 0;
+	&__subheader {
+	  font-size: 30px;
+	  margin-bottom: 20px;
+	}
+	&__list {
+	  flex-direction: column;
+	}
+	&__item {
+	  width: 100%;
+	}
+	&__article {
+	  margin-bottom: 10px;
+	  height: 100%;
+	}
+	&__article:last-child {
+	  margin-bottom: 10px;
+	}
+	&__article:last-of-type {
+	  margin-bottom: 0;
+	}
+  }
+}
