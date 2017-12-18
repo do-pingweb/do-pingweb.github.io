@@ -1,0 +1,72 @@
+.video-review {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: url(../images/video-review.png) center top no-repeat;
+  background-size: cover;
+  height: 680px;
+  &__subheader {
+    font-size: 32px;
+	color: #444;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 60px;
+  }
+}
+.video {
+  display: flex;
+  align-items: center;
+  &__item {
+    width: 50%;
+	flex-basis: 50%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	font-weight: 300;
+	font-size: 18px;
+	color: #444;
+  }
+  &__item--descr {
+    padding: 0 60px;
+  }
+  &__item--descr p {
+    margin: 5px 0;
+  }
+  &__item--descr ul {
+    margin: 5px 0;
+  }
+}
+.check-marked li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 20px;
+  &:before {
+    content: "\2611";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 414px) {
+  .video-review {
+    height: 100%;
+	&__subheader {
+	  font-size: 24px;
+	  margin-bottom: 30px;
+	  margin-top: 30px;
+	}
+  }
+  .video {
+    flex-direction: column;
+	background-size: auto 100%;
+	&__item {
+	  width: 100%;
+	}
+	&__item iframe {
+	  width: 100%;
+	}
+	&__item--descr {
+	  padding: 0 0 20px 0;
+	}
+  }
+}

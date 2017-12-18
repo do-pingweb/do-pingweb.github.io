@@ -1,0 +1,95 @@
+@import "header.less";
+@import "benefit.less";
+@import "advantages.less";
+@import "ready-site.less";
+@import "cases.less";
+@import "reserve.less";
+@import "main-idea.less";
+@import "rate.less";
+@import "tool.less";
+@import "video-review.less";
+@import "scheme.less";
+@import "newsletters.less";
+@import "about.less";
+@import "footer.less";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-position: inside;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-half {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.container-half--fcontacts {
+  margin: 0 0 0 auto;  
+  padding: 0 125px;
+}
+
+.container-half--ready-site {
+  margin: 0 0 0 auto; 
+  padding-left: 20px;  
+  padding-right: 65px;  
+}
+.container-half--author {
+  margin: 0 auto 0 0;  
+  padding: 0 65px; 
+}
+.form-success {
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+input:focus {
+  outline: none;
+}
+.remodal input[type="submit"] {
+  border: 2px solid #d70000;
+}
+.remodal input[type="submit"]:hover {
+  color: #d70000;
+  background: #fff;
+}
+@media (max-width: 414px) {
+  .container {
+    width: 100%;
+	padding: 30px 15px;
+  }
+  .container-half {
+    width: 100%;
+    height: auto;
+	padding: 30px 15px;
+  }
+  .container-half--fcontacts {
+    padding: 20px;
+	padding: 30px 15px;
+  }
+}
+@media (min-width: 415px) and (max-width: 1200px) {
+  html {
+    width: 1200px;
+  }
+  body {
+    width: 1200px;
+  }
+  .advantages__wrapper {
+    width: 1200px;
+	box-sizing: border-box;
+  }
+  .reserve__wrapper {
+    width: 1200px;
+	box-sizing: border-box;
+  }
+}

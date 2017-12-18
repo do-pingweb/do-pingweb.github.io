@@ -1,0 +1,224 @@
+.cases {
+  font-family: 'Roboto Condensed', sans-serif;
+  &__subheader {
+    font-weight: bold;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #444;
+	text-align: center;
+	margin-bottom: 40px;
+  }
+  &__comment {
+    margin-bottom: 60px;
+	font-weight: 300;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #444;
+	text-align: center;
+  }
+}
+.case {
+  display: flex;
+  margin-bottom: 60px;
+  &__item--info {
+    width: calc(~"100%/12*7");
+	flex-basis: calc(~"100%/12*7");
+  }
+  &__item--info table {
+    border-collapse: collapse;
+	border: 2px solid #fff;
+  }
+  &__item--info td {
+    border: 1px solid #e1e1e1;
+	padding: 15px 5px;
+	font-weight: 400;
+	color: #444;
+	text-align: center;
+  }
+  &__item--info tr td:first-child {
+    text-align: left;
+	padding-left: 0;
+  }
+  &__item--info th {
+    border: 1px solid #e1e1e1;
+	padding: 15px 5px;
+	color: #b9b9b9;
+	font-weight: 300;
+	font-size: 12px;
+	text-align: center;
+  }
+  &__item--diagramm {
+    width: calc(~"100%/12*2");
+	flex-basis: calc(~"100%/12*2");
+	background: url(../images/diagramm.png) center center no-repeat;
+  }
+  &__item--results {
+    background: url(../images/diagramm.png) left 40px center no-repeat;
+    width: calc(~"100%/12*5");
+	flex-basis: calc(~"100%/12*5");
+	font-weight: 400;
+	font-size: 18px;
+	color: #444;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 80px 0;
+    padding-left: 220px;
+  }
+}
+.results {
+  &__list {
+    display: flex;
+	margin-bottom: 60px;
+  }
+  &__item {
+    width: calc(~"100%/12*3");
+	flex-basis: calc(~"100%/12*3");
+	background: #e1e1e1;
+	border-radius: 5px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 0 15px;
+	font-weight: 400;
+	color: #444;
+	font-size: 18px;
+  }
+  &__item--numbers {
+    display: inline-block;
+    font-weight: bold;
+	font-size: 30px;
+	margin-top: 15px;
+  }
+  &__item:first-child {
+    margin-left: 0;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+}
+.attention {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  &__item--mark {
+    font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #fdb302;
+	padding: 10px;
+  }
+  &__item--comment {
+    padding: 0 25px;
+	font-weight: 400;
+	color: #444;
+	font-size: 21px;
+	text-transform: uppercase;
+  }
+  &__item--info {
+    display: block;
+    width: 29px;
+	height: 29px;
+    background: url(../images/info.png) center center no-repeat;
+  }
+  &__item--info:hover {
+    cursor: pointer;
+  }
+}
+.service__item {
+  padding-left: 35px;
+  &--vk {
+    background: url(../images/vk.png) left center no-repeat;
+  }
+  &--avito {
+    background: url(../images/avito.png) left center no-repeat;
+  }
+  &--yandex {
+    background: url(../images/yandex.png) left center no-repeat;
+  }
+  &--rsya {
+    background: url(../images/yandex.png) left center no-repeat;
+  }
+  &--summ {
+    background: url(../images/itog.png) left center no-repeat;
+  }
+}
+.tooltip_templates { 
+  display: none;
+}
+
+@media (max-width: 414px) {
+   .cases {
+     &__subheader {
+       font-size: 24px;  
+       margin-bottom: 20px;
+     }
+     &__comment {
+       font-size: 20px;
+       margin-bottom: 20px;
+     }     
+   } 
+   .case {
+     flex-wrap:wrap;;
+     margin-bottom: 20px;
+     &__item--info {
+       width: 100%;  
+       flex-direction: 100%;  
+     }
+     &__item--diagramm {
+       width: calc(~"100%/12*4");
+       flex-basis: calc(~"100%/12*4");
+     }
+     &__item--results {
+       width: calc(~"100%/12*8");
+       flex-basis: calc(~"100%/12*8"); 
+       padding-left: 20px;
+       margin: 20px 0;
+       background-position: left center;
+       width: 100%;
+       min-height: 200px;
+       flex-basis: auto;
+       padding-left: 45%;
+     }
+	 &__item--info th {
+	   padding: 15px 5px;
+	   color: #000;
+	 }
+   }
+   .service {
+     &__item {
+       padding-left: 0;
+       background: none;  
+     }  
+   }
+  .results {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }  
+    &__item {
+      margin: 0 0 5px 0;   
+      width: calc(~"100%/12*6 - 10px");
+      flex-basis: calc(~"100%/12*6 - 10px");
+      display: flex;
+      flex-direction: column;	
+      justify-content: space-between;	  
+    } 
+  } 
+  .attention {
+    margin-bottom: 0;
+    &__item--mark {
+      font-size: 22px;
+    }
+    &__item--comment {
+      font-size: 14px;
+      padding: 0 10px;      
+    }
+    &__item--info {
+      background-size: contain;
+    }
+  }  
+}
