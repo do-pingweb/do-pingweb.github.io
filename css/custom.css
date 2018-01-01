@@ -307,3 +307,10 @@ a:hover {
   min-height: 150px;
   margin-bottom: 20px;
 }
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+.card-descr {
+  padding-left: 10px;
+}
