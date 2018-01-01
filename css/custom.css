@@ -307,7 +307,13 @@ a:hover {
   min-height: 150px;
   margin-bottom: 20px;
 }
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .card {
+  width: calc(100%/3);
   display: flex;
   justify-content: space-between;
 }
