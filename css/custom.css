@@ -303,3 +303,7 @@ a:hover {
 .button:hover {
   color: #fff;
 }
+.logo {
+  min-height: 150px;
+  margin-bottom: 20px;
+}
